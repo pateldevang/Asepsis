@@ -10,6 +10,7 @@
 		20E2EAED3CDDC9193CDBE393 /* Pods_Asepsis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED3621DCBFCD41B415718EA /* Pods_Asepsis.framework */; };
 		77201A7E23367BEA0003E88F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77201A7D23367BEA0003E88F /* GoogleService-Info.plist */; };
 		77201A8023367F480003E88F /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77201A7F23367F480003E88F /* homeViewController.swift */; };
+		77201A822336821B0003E88F /* keyboard+Hide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77201A812336821B0003E88F /* keyboard+Hide.swift */; };
 		77F023F823367310005D6AFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F023F723367310005D6AFF /* AppDelegate.swift */; };
 		77F023FA23367310005D6AFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F023F923367310005D6AFF /* ViewController.swift */; };
 		77F023FD23367310005D6AFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77F023FB23367310005D6AFF /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		61208F81E59711665DC0DCE4 /* Pods-Asepsis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asepsis.release.xcconfig"; path = "Target Support Files/Pods-Asepsis/Pods-Asepsis.release.xcconfig"; sourceTree = "<group>"; };
 		77201A7D23367BEA0003E88F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		77201A7F23367F480003E88F /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
+		77201A812336821B0003E88F /* keyboard+Hide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "keyboard+Hide.swift"; sourceTree = "<group>"; };
 		77F023F423367310005D6AFF /* Asepsis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asepsis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77F023F723367310005D6AFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77F023F923367310005D6AFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,8 +77,9 @@
 			children = (
 				77F023F723367310005D6AFF /* AppDelegate.swift */,
 				77F023F923367310005D6AFF /* ViewController.swift */,
-				77F023FB23367310005D6AFF /* Main.storyboard */,
+				77201A812336821B0003E88F /* keyboard+Hide.swift */,
 				77201A7F23367F480003E88F /* homeViewController.swift */,
+				77F023FB23367310005D6AFF /* Main.storyboard */,
 				77F023FE23367312005D6AFF /* Assets.xcassets */,
 				77F0240023367312005D6AFF /* LaunchScreen.storyboard */,
 				77F0240323367312005D6AFF /* Info.plist */,
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77201A822336821B0003E88F /* keyboard+Hide.swift in Sources */,
 				77F023FA23367310005D6AFF /* ViewController.swift in Sources */,
 				77201A8023367F480003E88F /* homeViewController.swift in Sources */,
 				77F023F823367310005D6AFF /* AppDelegate.swift in Sources */,

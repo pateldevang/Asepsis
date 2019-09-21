@@ -20,13 +20,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.load.isHidden = true
+        // Setting up textFields
+        textFieldDelegateSetUp()
+        // Function for tap gesture
+       hideKeyboardWhenTappedAround()
     }
-    
     
     @IBAction func signIn(_ sender: UIButton) {
         self.load.isHidden = false
         load.startAnimating()
-        Auth.auth().signIn(withEmail: empID.text!, password: password.text!, completion: { user, error in
+        
+        Auth.auth().signIn(withEmail: empID.text!+"@gmail.com", password: password.text!, completion: { user, error in
             
             if let firebaseError = error {
                 self.load.isHidden = true
@@ -43,6 +47,21 @@ class ViewController: UIViewController {
         })
     }
     
+    //MARK:- TextField Delegate Method
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 
 }
 
+
+//MARK: - Extensions
+extension ViewController: UITextFieldDelegate {
+    
+    //Setup textfield delegates
+    func textFieldDelegateSetUp() {
+        empID.delegate = self
+        password.delegate = self
+    }
+}

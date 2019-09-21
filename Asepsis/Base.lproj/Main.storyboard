@@ -109,7 +109,7 @@
         <!--Home View Controller-->
         <scene sceneID="8RW-R6-uOp">
             <objects>
-                <viewController id="dwS-ND-sa6" customClass="homeViewController" customModule="Asepsis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeViewController" id="dwS-ND-sa6" customClass="homeViewController" customModule="Asepsis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mVL-5y-MEb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
