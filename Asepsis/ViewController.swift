@@ -10,10 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //MARK: - Outlets
+    @IBOutlet weak var empID: UITextField!
+    @IBOutlet weak var password: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    
 
 
 }
