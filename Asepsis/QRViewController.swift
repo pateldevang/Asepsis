@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import Firebase
 
 class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
@@ -47,12 +48,12 @@ class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
         
         //Add scanner to subView
         view.addSubview(scannerView)
-       
+        
         scan()
         
         //Start viewAnimate Function
         viewAnimate(till: true)
-      
+        
     }
     
     //MARK:- Scan start function
@@ -116,7 +117,7 @@ class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
     }
     
     //MARK:- Failed error generating function
-
+    
     func failed() {
         let ac = UIAlertController(title: "Scanning not supported", message: "Your device does not support scanning a code from an item. Please use a device with a camera.", preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default))
@@ -167,8 +168,25 @@ class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
             
             // Write your code here to use the generated output
             found(code: stringValue) //Example written here
-            // TO generate alert
-            alert(url: stringValue, code: stringValue)
+            let alertController = UIAlertController(title: "Add New", message: "", preferredStyle: .alert)
+            
+            alertController.addTextField { (textField : UITextField!) -> Void in
+                textField.placeholder = "Enter weight (in Kgs)"
+            }
+            let saveAction = UIAlertAction(title: "Save", style: .default, handler: { alert -> Void in
+                let firstTextField = alertController.textFields![0] as UITextField
+                let ref = Database.database().reference()
+                ref.child("users").child("\(stringValue)").setValue(firstTextField.text!)
+                ref.child("id").child("\(stringValue)").setValue(stringValue)
+                
+            })
+            let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
+            
+            alertController.addAction(saveAction)
+            alertController.addAction(cancelAction)
+            
+            self.present(alertController, animated: true, completion: nil)
+            
         }
     }
     
@@ -195,6 +213,7 @@ class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
         scannerView.center.y = 179.0
         //Again Start viewAnimate func
         viewAnimate(till: true)
+        
     }
     
     
@@ -249,6 +268,6 @@ class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
         }
         
     }
-
+    
 }
 

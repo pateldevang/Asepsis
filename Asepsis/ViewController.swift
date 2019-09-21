@@ -8,9 +8,10 @@
 
 import UIKit
 import Firebase
+import AudioToolbox
 
 class ViewController: UIViewController {
-
+    
     //MARK: - Outlets
     @IBOutlet weak var empID: UITextField!
     @IBOutlet weak var password: UITextField!
@@ -23,7 +24,7 @@ class ViewController: UIViewController {
         // Setting up textFields
         textFieldDelegateSetUp()
         // Function for tap gesture
-       hideKeyboardWhenTappedAround()
+        hideKeyboardWhenTappedAround()
     }
     
     @IBAction func signIn(_ sender: UIButton) {
@@ -40,7 +41,8 @@ class ViewController: UIViewController {
                 self.present(alert, animated: true)
                 return
             }
-            let homeView = self.storyboard?.instantiateViewController(withIdentifier: "homeViewController") as! homeViewController
+            let homeView = self.storyboard?.instantiateViewController(withIdentifier: "homeNav") as! UINavigationController
+            AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
             self.present(homeView, animated: true, completion: nil)
             print("Success!")
             
@@ -52,7 +54,7 @@ class ViewController: UIViewController {
         textField.resignFirstResponder()
         return true
     }
-
+    
 }
 
 

@@ -12,6 +12,8 @@
 		77201A8023367F480003E88F /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77201A7F23367F480003E88F /* homeViewController.swift */; };
 		77201A822336821B0003E88F /* keyboard+Hide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77201A812336821B0003E88F /* keyboard+Hide.swift */; };
 		77291741233684BC009AC711 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77291740233684BC009AC711 /* QRViewController.swift */; };
+		773F175A2336879C005F18A3 /* userViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773F17592336879C005F18A3 /* userViewController.swift */; };
+		774095AD23369B18004D35F4 /* summaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774095AC23369B18004D35F4 /* summaryViewController.swift */; };
 		77F023F823367310005D6AFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F023F723367310005D6AFF /* AppDelegate.swift */; };
 		77F023FA23367310005D6AFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F023F923367310005D6AFF /* ViewController.swift */; };
 		77F023FD23367310005D6AFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77F023FB23367310005D6AFF /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 		77201A7F23367F480003E88F /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		77201A812336821B0003E88F /* keyboard+Hide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "keyboard+Hide.swift"; sourceTree = "<group>"; };
 		77291740233684BC009AC711 /* QRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		773F17592336879C005F18A3 /* userViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userViewController.swift; sourceTree = "<group>"; };
+		774095AC23369B18004D35F4 /* summaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = summaryViewController.swift; sourceTree = "<group>"; };
 		77F023F423367310005D6AFF /* Asepsis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asepsis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77F023F723367310005D6AFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77F023F923367310005D6AFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +85,9 @@
 				77F023F923367310005D6AFF /* ViewController.swift */,
 				77201A812336821B0003E88F /* keyboard+Hide.swift */,
 				77291740233684BC009AC711 /* QRViewController.swift */,
+				774095AC23369B18004D35F4 /* summaryViewController.swift */,
 				77201A7F23367F480003E88F /* homeViewController.swift */,
+				773F17592336879C005F18A3 /* userViewController.swift */,
 				77F023FB23367310005D6AFF /* Main.storyboard */,
 				77F023FE23367312005D6AFF /* Assets.xcassets */,
 				77F0240023367312005D6AFF /* LaunchScreen.storyboard */,
@@ -228,7 +234,9 @@
 				77201A822336821B0003E88F /* keyboard+Hide.swift in Sources */,
 				77F023FA23367310005D6AFF /* ViewController.swift in Sources */,
 				77201A8023367F480003E88F /* homeViewController.swift in Sources */,
+				773F175A2336879C005F18A3 /* userViewController.swift in Sources */,
 				77F023F823367310005D6AFF /* AppDelegate.swift in Sources */,
+				774095AD23369B18004D35F4 /* summaryViewController.swift in Sources */,
 				77291741233684BC009AC711 /* QRViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
