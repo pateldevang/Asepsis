@@ -113,6 +113,33 @@
                     <view key="view" contentMode="scaleToFill" id="mVL-5y-MEb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Asepsis" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7N-k0-5b4">
+                                <rect key="frame" x="59" y="66" width="257" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjc-9T-aBH">
+                                <rect key="frame" x="70" y="230" width="235" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Scan">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuv-wI-SmV">
+                                <rect key="frame" x="70" y="336" width="235" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="users">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="xRZ-yf-6gR"/>
                     </view>
@@ -200,5 +227,68 @@
             </objects>
             <point key="canvasLocation" x="830" y="859"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Pat-60-F9j">
+            <objects>
+                <viewController id="StS-Mv-kbd" customClass="QRViewController" customModule="Asepsis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qmj-vh-opN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Focus" translatesAutoresizingMaskIntoConstraints="NO" id="OgK-tJ-pS2">
+                                <rect key="frame" x="25" y="171" width="325" height="325"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="325" id="7Ow-nU-rID"/>
+                                    <constraint firstAttribute="width" constant="325" id="toh-Dd-0C0"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Hr-jV-FTF">
+                                <rect key="frame" x="110.5" y="537.5" width="154" height="39"/>
+                                <color key="backgroundColor" red="1" green="0.69410232839999997" blue="0.0" alpha="0.78836686639999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="bk2-ff-hIN"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="154" id="mxd-n0-lip"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="retake">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="scanAction:" destination="StS-Mv-kbd" eventType="touchUpInside" id="Lvr-jn-sHA"/>
+                                </connections>
+                            </button>
+                            <view alpha="0.69999998807907104" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PRU-53-3mk">
+                                <rect key="frame" x="34" y="179" width="306.5" height="4"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1142683873" green="0.52822657009999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4Hr-jV-FTF" firstAttribute="centerX" secondItem="Qmj-vh-opN" secondAttribute="centerX" id="58O-jO-30U"/>
+                            <constraint firstItem="OgK-tJ-pS2" firstAttribute="centerX" secondItem="Qmj-vh-opN" secondAttribute="centerX" id="6f2-dI-6jJ"/>
+                            <constraint firstItem="OgK-tJ-pS2" firstAttribute="centerY" secondItem="Qmj-vh-opN" secondAttribute="centerY" id="k9c-5B-jxi"/>
+                            <constraint firstItem="4Hr-jV-FTF" firstAttribute="top" secondItem="OgK-tJ-pS2" secondAttribute="bottom" constant="41.5" id="vTS-tk-bja"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XFP-BI-oQL"/>
+                    </view>
+                    <connections>
+                        <outlet property="QRimageView" destination="OgK-tJ-pS2" id="w3M-eC-dsN"/>
+                        <outlet property="scanButton" destination="4Hr-jV-FTF" id="2bL-a2-JAp"/>
+                        <outlet property="scannerView" destination="PRU-53-3mk" id="nnP-5y-iqS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aj9-Hf-JuS" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2455" y="124"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Focus" width="414" height="414"/>
+    </resources>
 </document>
