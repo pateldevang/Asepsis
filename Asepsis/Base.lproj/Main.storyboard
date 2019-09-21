@@ -43,6 +43,9 @@
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="signIn:" destination="ovf-Ky-O2b" eventType="touchUpInside" id="xXn-09-xty"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asepsis" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7I6-R9-VxO">
                                 <rect key="frame" x="59" y="115" width="257" height="60"/>
@@ -95,6 +98,7 @@
                     </view>
                     <connections>
                         <outlet property="empID" destination="k5r-W4-eZp" id="LtM-Gh-VU6"/>
+                        <outlet property="load" destination="q5F-eb-aOi" id="TWq-8g-Uu6"/>
                         <outlet property="password" destination="UB0-1N-hCY" id="z4e-N0-7qQ"/>
                     </connections>
                 </viewController>
@@ -102,10 +106,25 @@
             </objects>
             <point key="canvasLocation" x="831" y="133"/>
         </scene>
+        <!--Home View Controller-->
+        <scene sceneID="8RW-R6-uOp">
+            <objects>
+                <viewController id="dwS-ND-sa6" customClass="homeViewController" customModule="Asepsis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mVL-5y-MEb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="xRZ-yf-6gR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ycd-Vy-SjV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1617" y="124"/>
+        </scene>
         <!--New View Controller-->
         <scene sceneID="dhg-ZZ-Wb3">
             <objects>
-                <viewController id="tgl-p2-kpL" customClass="newViewController" customModule="VIT_FREE_SLOTS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tgl-p2-kpL" customClass="newViewController" customModule="Asepsis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J7Q-nd-s3q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

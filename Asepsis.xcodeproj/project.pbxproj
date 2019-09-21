@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		20E2EAED3CDDC9193CDBE393 /* Pods_Asepsis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED3621DCBFCD41B415718EA /* Pods_Asepsis.framework */; };
 		77201A7E23367BEA0003E88F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77201A7D23367BEA0003E88F /* GoogleService-Info.plist */; };
+		77201A8023367F480003E88F /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77201A7F23367F480003E88F /* homeViewController.swift */; };
 		77F023F823367310005D6AFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F023F723367310005D6AFF /* AppDelegate.swift */; };
 		77F023FA23367310005D6AFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F023F923367310005D6AFF /* ViewController.swift */; };
 		77F023FD23367310005D6AFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77F023FB23367310005D6AFF /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 		1ED3621DCBFCD41B415718EA /* Pods_Asepsis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Asepsis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61208F81E59711665DC0DCE4 /* Pods-Asepsis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asepsis.release.xcconfig"; path = "Target Support Files/Pods-Asepsis/Pods-Asepsis.release.xcconfig"; sourceTree = "<group>"; };
 		77201A7D23367BEA0003E88F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		77201A7F23367F480003E88F /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		77F023F423367310005D6AFF /* Asepsis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asepsis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77F023F723367310005D6AFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77F023F923367310005D6AFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				77F023F723367310005D6AFF /* AppDelegate.swift */,
 				77F023F923367310005D6AFF /* ViewController.swift */,
 				77F023FB23367310005D6AFF /* Main.storyboard */,
+				77201A7F23367F480003E88F /* homeViewController.swift */,
 				77F023FE23367312005D6AFF /* Assets.xcassets */,
 				77F0240023367312005D6AFF /* LaunchScreen.storyboard */,
 				77F0240323367312005D6AFF /* Info.plist */,
@@ -88,7 +91,6 @@
 				AAF9E560D2EC945B6E2AC4F2 /* Pods-Asepsis.debug.xcconfig */,
 				61208F81E59711665DC0DCE4 /* Pods-Asepsis.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -218,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77F023FA23367310005D6AFF /* ViewController.swift in Sources */,
+				77201A8023367F480003E88F /* homeViewController.swift in Sources */,
 				77F023F823367310005D6AFF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
