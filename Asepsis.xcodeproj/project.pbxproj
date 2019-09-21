@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20E2EAED3CDDC9193CDBE393 /* Pods_Asepsis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED3621DCBFCD41B415718EA /* Pods_Asepsis.framework */; };
 		77201A7E23367BEA0003E88F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77201A7D23367BEA0003E88F /* GoogleService-Info.plist */; };
 		77F023F823367310005D6AFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F023F723367310005D6AFF /* AppDelegate.swift */; };
 		77F023FA23367310005D6AFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F023F923367310005D6AFF /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1ED3621DCBFCD41B415718EA /* Pods_Asepsis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Asepsis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61208F81E59711665DC0DCE4 /* Pods-Asepsis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asepsis.release.xcconfig"; path = "Target Support Files/Pods-Asepsis/Pods-Asepsis.release.xcconfig"; sourceTree = "<group>"; };
 		77201A7D23367BEA0003E88F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		77F023F423367310005D6AFF /* Asepsis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asepsis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77F023F723367310005D6AFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		77F023FE23367312005D6AFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77F0240123367312005D6AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77F0240323367312005D6AFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAF9E560D2EC945B6E2AC4F2 /* Pods-Asepsis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asepsis.debug.xcconfig"; path = "Target Support Files/Pods-Asepsis/Pods-Asepsis.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20E2EAED3CDDC9193CDBE393 /* Pods_Asepsis.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A717A82250C26124B6ED917 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1ED3621DCBFCD41B415718EA /* Pods_Asepsis.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		77F023EB23367310005D6AFF = {
 			isa = PBXGroup;
 			children = (
 				77F023F623367310005D6AFF /* Asepsis */,
 				77F023F523367310005D6AFF /* Products */,
+				7A38FEE35F2C195C16992741 /* Pods */,
+				4A717A82250C26124B6ED917 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = Asepsis;
 			sourceTree = "<group>";
 		};
+		7A38FEE35F2C195C16992741 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAF9E560D2EC945B6E2AC4F2 /* Pods-Asepsis.debug.xcconfig */,
+				61208F81E59711665DC0DCE4 /* Pods-Asepsis.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77F0240623367312005D6AFF /* Build configuration list for PBXNativeTarget "Asepsis" */;
 			buildPhases = (
+				A688827938D9D8004A0ADC8D /* [CP] Check Pods Manifest.lock */,
 				77F023F023367310005D6AFF /* Sources */,
 				77F023F123367310005D6AFF /* Frameworks */,
 				77F023F223367310005D6AFF /* Resources */,
+				33EF11DFBA06DB7A1F8EE5E6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +160,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33EF11DFBA06DB7A1F8EE5E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Asepsis/Pods-Asepsis-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Asepsis/Pods-Asepsis-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A688827938D9D8004A0ADC8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Asepsis-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		77F023F023367310005D6AFF /* Sources */ = {
@@ -284,6 +362,7 @@
 		};
 		77F0240723367312005D6AFF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAF9E560D2EC945B6E2AC4F2 /* Pods-Asepsis.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +381,7 @@
 		};
 		77F0240823367312005D6AFF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61208F81E59711665DC0DCE4 /* Pods-Asepsis.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
